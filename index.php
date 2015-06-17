@@ -1,5 +1,4 @@
-<?php
-?>
+<?php ?>
 
 <html>
     <head>
@@ -12,30 +11,63 @@
         <script src="js/bootstrap.js" type="text/javascript"></script>        
     </head>
     <body>
-        <div align="center" style="font-family: serif"> <h1>Digital Computer</h1></div>
-        <div class="container" src="img/Textura.jpg">
-
-            <div class="row" style="margin: 15px">
-                <div class="col-xs-6 col-sm-4"><h2>Computadores</h2></div>
-                <div class="col-xs-6 col-sm-4"><h2>Peças</h2></div>
-                <div class="clearfix visible-xs-block"></div>
-                <div class="col-xs-6 col-sm-4"><h2>Suporte</h2></div>
+        <div align="center" style="color: blue"><h1>Digital Computer</h1></div>
+        <div class="container" style="background-color: lightskyblue">
+            <div class="nav nav-justified" style="margin: 10px" align="center">
+                <div class="col-sm-4"><h2>Computadores</h2></div>
+                <div class="col-sm-4"><h2>Peças</h2></div>
+                <div class="col-sm-4"><h2>Suporte</h2></div>
             </div>
-            <div class="col-md-6" style="margin: 15px" >
+            <div align="center"  class="col-lg-4" style="margin: 10px">
+                <div class="jumbotron">
                 <div class="form-group">
-                    <label class="col-sm-2 control-label">Usuário</label>
+                    <label class="col-sm-4 control-label">Usuário</label>
                     <div class="col-sm-10">
-                        <input type="text" name="login" id="input-nome" class="form-control" placeholder="Login">
+                        <input type="text" name="login" class="form-control" placeholder="Login">
                     </div>
                 </div>
-                <div class="form-group">
-                    <label class="col-sm-2 control-label">Senha</label>
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">Senha</label>
                     <div class="col-sm-10">
-                        <input type="password" name="senha" id="input-endereco" class="form-control" placeholder="Senha">
+                        <input type="password" name="senha"class="form-control" placeholder="Senha">
                     </div>
+                </div>
+                    <br>
+                <button  type="button" class="btn btn-success">Entrar</button>
+                <br>
+                <br>
+                <br>
+                </div>
+                <div class="row" style="background-color: #bce8f1" align="center">
+                    <h2>Carrinho de Compras</h2>
+                    <br>
+                    <ul>
+                        <li><h4>Produto 1</h4></li>
+                        <br>
+                        <li><h4>Produto 2</h4></li>
+                        <br>
+                        <li><h4>Produto 3</h4></li>
+                        <br>
+                        <li><h4>Produto 4</h4></li>
+                        <br>
+                        <li><h4>Produto 5</h4></li>
+                    </ul>
                 </div>
             </div>
             <div class="col-md-6">
+                <div class="row" style="background-color: darkcyan">
+                    <ul><h3 style="font-family: inherit">Lançamentos</h3></ul>
+                    <ul>
+                        <li><h4>Computador Dell i3</h4>
+                            <img src="img/pc_1.jpg" height="200">
+                            <h5>Este Computador é uma super máquina da revolução moderna, com 50Gb de Memória Ram e seu processador de 10 núcleos de processameto.</h5>
+                        </li>
+                        <li><h4>Computador Lenovo i5</h4>
+                            <img src="img/pc_2.jpg" height="250">
+                            <h5>Esta máquina de uso pessoal é perfeita para o seu dia-a-dia com seu design futuristico e seu poder de armazento altíssimo.</h5>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </body>
