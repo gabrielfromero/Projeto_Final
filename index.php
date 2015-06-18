@@ -1,5 +1,3 @@
-<?php ?>
-
 <html>
     <head>
         <title>TODO supply a title</title>
@@ -12,11 +10,22 @@
     </head>
     <body>
         <div align="center" style="color: blue"><h1>Digital Computer</h1></div>
-        <div class="container" style="background-color: lightskyblue">
-            <div class="navbar-form" style="margin: 10px; color: darkblue" align="center">
-                <div class="col-sm-4"><h2>Computadores</h2></div>
-                <div class="col-sm-4"><h2>Peças</h2></div>
-                <div class="col-sm-4"><h2>Suporte</h2></div>
+        <div class="container" style="background-color: lightskyblue"
+             <div class="col-md-12" style="margin: 10px;" align= "center">
+                <ul>
+                    <li class="btn-primary"> 
+                        <span class="icon-bar">
+                            <a style="color:#000"><h3>Computadores</h3></a></span>
+                    </li>
+                    <li class="btn-primary">
+                        <span class="icon-bar">
+                            <a style="color: #000"><h3>Peças</h3></a></span>
+                    </li>
+                    <li class="btn-primary">
+                        <span class="icon-bar">
+                            <a style="color: #000"><h3>Suporte</h3></a></span>
+                    </li>
+                </ul>
             </div>
             <div align="center"  class="col-lg-4" style="margin: 10px">
                 <div class="jumbotron">
@@ -54,7 +63,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-7"  style="margin: 10px">
                 <div class="row" style="background-color: darkcyan">
                     <ul><h3 style="font-family: inherit">Lançamentos</h3></ul>
                     <ul>
@@ -73,19 +82,19 @@
             </div>
         </div>
         <script>
-                    $('#login').click(function () {
-            var valido = true;
-            if ($('#user').val() == '') {
-                valido = false; . +
-                    alert('Preencha seu login');
-            }
-            if ($('#senha').val() == '') {
-                valido = false;
-                    alert('Preencha sua senha corretamente');
-                }
-            }
-            return valido;
-            });
+//                    $('#login').click(function () {
+//            var valido = true;
+//                    if ($('#user').val() == '') {
+//            valido = false; . +
+//                    alert('Preencha seu login');
+//            }
+//            if ($('#senha').val() == '') {
+//            valido = false;
+//                    alert('Preencha sua senha corretamente');
+//            }
+//            }
+//            return valido;
+//            });
         </script>
     </body>
 </html>
