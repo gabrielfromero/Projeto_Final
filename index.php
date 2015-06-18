@@ -9,21 +9,21 @@
         <script src="js/bootstrap.js" type="text/javascript"></script>        
     </head>
     <body>
-        <div align="center" style="color: blue"><h1>Digital Computer</h1></div>
-        <div class="container" style="background-color: lightskyblue"
+        <div align="center" style="color: blue; font-family: fantasy"><h1>Digital Computer</h1></div>
+        <div class="container"
              <div class="col-md-12" style="margin: 10px;" align= "center">
                 <ul>
-                    <li class="btn-primary"> 
+                    <li class="btn-primary col-md-5"> 
                         <span class="icon-bar">
-                            <a style="color:#000"><h3>Computadores</h3></a></span>
+                            <a href="http://www.americanas.com.br/linha/267889/informatica/computadores-e-all-in-one"style="color:#000"><h2>Computadores</h2></a></span>
                     </li>
-                    <li class="btn-primary">
+                    <li class="btn-primary col-md-3">
                         <span class="icon-bar">
-                            <a style="color: #000"><h3>Peças</h3></a></span>
+                            <a href="https://www.balaodainformatica.com.br/Produtos/Inform%C3%A1tica/Componentes-e-Pe%C3%A7as"style="color: #000"><h2>Peças</h2></a></span>
                     </li>
-                    <li class="btn-primary">
+                    <li class="btn-primary col-md-4">
                         <span class="icon-bar">
-                            <a style="color: #000"><h3>Suporte</h3></a></span>
+                            <a href="http://www.smartsupport.com.br/" style="color: #000"><h2>Suporte</h2></a></span>
                     </li>
                 </ul>
             </div>
@@ -67,7 +67,7 @@
                 <div class="row" style="background-color: darkcyan">
                     <ul><h3 style="font-family: inherit">Lançamentos</h3></ul>
                     <ul>
-                        <li><h4>Computador Dell i3</h4>
+                        <li><h4>Computador Dell i10</h4>
                             <img src="img/pc_1.jpg" height="200">
                             <button type="button" id="compra1" class="btn btn-danger">Comprar</button> 
                             <h5>Este Computador é uma super máquina da revolução moderna, com 50Gb de Memória Ram e seu processador de 10 núcleos de processameto.</h5>
