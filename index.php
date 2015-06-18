@@ -13,30 +13,30 @@
     <body>
         <div align="center" style="color: blue"><h1>Digital Computer</h1></div>
         <div class="container" style="background-color: lightskyblue">
-            <div class="nav nav-justified" style="margin: 10px" align="center">
+            <div class="navbar-form" style="margin: 10px; color: darkblue" align="center">
                 <div class="col-sm-4"><h2>Computadores</h2></div>
                 <div class="col-sm-4"><h2>Peças</h2></div>
                 <div class="col-sm-4"><h2>Suporte</h2></div>
             </div>
             <div align="center"  class="col-lg-4" style="margin: 10px">
                 <div class="jumbotron">
-                <div class="form-group">
-                    <label class="col-sm-4 control-label">Usuário</label>
-                    <div class="col-sm-10">
-                        <input type="text" name="login" class="form-control" placeholder="Login">
-                    </div>
-                </div>
                     <div class="form-group">
-                        <label class="col-sm-4 control-label">Senha</label>
-                    <div class="col-sm-10">
-                        <input type="password" name="senha"class="form-control" placeholder="Senha">
+                        <label class="col-sm-4 control-label" id="user">Usuário</label>
+                        <div class="col-sm-10">
+                            <input type="text" name="login" class="form-control" placeholder="Login">
+                        </div>
                     </div>
-                </div>
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label" id="senha">Senha</label>
+                        <div class="col-sm-10">
+                            <input type="password" name="senha"class="form-control" placeholder="Senha">
+                        </div>
+                    </div>
                     <br>
-                <button  type="button" class="btn btn-success">Entrar</button>
-                <br>
-                <br>
-                <br>
+                    <button  type="button" class="btn btn-success" id="login">Entrar</button>
+                    <br>
+                    <br>
+                    <br>
                 </div>
                 <div class="row" style="background-color: #bce8f1" align="center">
                     <h2>Carrinho de Compras</h2>
@@ -60,16 +60,33 @@
                     <ul>
                         <li><h4>Computador Dell i3</h4>
                             <img src="img/pc_1.jpg" height="200">
+                            <button type="button" id="compra1" class="btn btn-danger">Comprar</button> 
                             <h5>Este Computador é uma super máquina da revolução moderna, com 50Gb de Memória Ram e seu processador de 10 núcleos de processameto.</h5>
                         </li>
                         <li><h4>Computador Lenovo i5</h4>
                             <img src="img/pc_2.jpg" height="250">
+                            <button type="button" id="compra2" class="btn btn-danger">Comprar</button>
                             <h5>Esta máquina de uso pessoal é perfeita para o seu dia-a-dia com seu design futuristico e seu poder de armazento altíssimo.</h5>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
+        <script>
+                    $('#login').click(function () {
+            var valido = true;
+            if ($('#user').val() == '') {
+                valido = false; . +
+                    alert('Preencha seu login');
+            }
+            if ($('#senha').val() == '') {
+                valido = false;
+                    alert('Preencha sua senha corretamente');
+                }
+            }
+            return valido;
+            });
+        </script>
     </body>
 </html>
 
