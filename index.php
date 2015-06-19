@@ -1,6 +1,15 @@
+<!--<?php include ('comum.php');
+
+$con = novaConexao();
+
+$sql = $con->prepare('select * from conta');
+$sql->execute();
+$sql->bind_result($id, $usuario, $senha);
+include_once ('comum.php');
+?>-->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Projeto Final</title>
         <meta charset="ISO-8859-1">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
@@ -9,17 +18,16 @@
         <script src="js/bootstrap.js" type="text/javascript"></script>        
     </head>
     <body>
-        <!--<div align="center" style="color: cyan; font-family: cursive"><h1><b>Digital Computer</b></h1></div>-->
         <div align="center">
             <img src="img/logo1.gif" style="border-radius: 40px">
         </div>
-        <div><marquee style="font-family: arial;" slide direction="left"><span style="color: fuchsia;">
+        <div><marquee style="font-family: fantasy;" slide direction="left"><span style="color: fuchsia;">
                     <h1><b>A Melhor Empresa da Galaxia. Os Melhores Produtos com o Melhor Suporte do Mercado!
                         </b></h1></span></marquee>
         </div>
         <div class="container"
              <head>
-            <div class="col-md-11" style="margin: 10px">
+            <div class="row" style="margin: 10px">
                 <ul>
                     <li class="btn-primary col-md-4" align="center" style="text-decoration-color: #28a4c9" 
                         <span class="icon-bar">
@@ -36,25 +44,48 @@
                 </ul>
             </div>
         </head>
-        <div align="center"  class="col-lg-4" style="margin: 10px">
+        <div align="center"  class="col-lg-5" style="margin: 10px">
+            <div>
+                <form class="form-inline">
+                    <div class="form-group">
+                        <label for="exampleInputName2" style="color: white">Campo de Busca</label>
+                        <input type="text" style="margin: 7px" class="form-control" placeholder="Digite sua busca">
+
+                    </div>
+                    <button type="submit" class="btn btn-success">Buscar</button>
+                </form>
+            </div>
             <div class="jumbotron">
                 <div class="form-group">
-                    <label class="col-sm-4 control-label" id="user">Usuário</label>
-                    <div class="col-sm-10">
+                    <label class="col-sm-5 control-label" id="user">Usuário</label>
+                    <div class="col-sm-7">
                         <input type="text" name="login" class="form-control" placeholder="Login">
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="col-sm-4 control-label" id="senha">Senha</label>
-                    <div class="col-sm-10">
+                    <label class="col-sm-5 control-label" id="senha">Senha</label>
+                    <div class="col-sm-7">
                         <input type="password" name="senha"class="form-control" placeholder="Senha">
                     </div>
+                </div> 
+                <br>
+                <br>
+                <br>
+                <br>
+
+                <div class="form-group">
+                    <button style="margin: 5px"  type="button" class="btn btn-info" id="login">Entrar</button>
+                    <br>
+                    <a  href="cadastro.php" style="color: #000"><button style="margin: 5px"type="button" class="btn btn-info" id="login">Criar Cadastro</button>                 
                 </div>
-                <br>
-                <button  type="button" class="btn btn-success" id="login">Entrar</button>
-                <br>
-                <br>
-                <br>
+
+                <!--                <?php if (isset($_GET['msg'])) { ?>
+                        
+                                            <span><?php echo $_GET['msg']; ?></span>
+                <?php } ?>
+                                <br>
+                                <br>
+                                <br>-->
             </div>
             <div class="row" style="background-color: #bce8f1" align="center">
                 <h2>Carrinho de Compras</h2>
@@ -72,9 +103,9 @@
                 </ul>
             </div>
         </div>
-        <div class="col-md-7"  style="margin: 10px">
+        <div class="col-md-6"  style="margin: 10px">
             <div class="row" style="background-color: darkcyan">
-                <ul><h3 style="font-family: inherit">Lançamentos</h3></ul>
+                <ul><h3 style="font-family: inherit; color: blue"><b>Lançamentos</b></h3></ul>
                 <ul>
                     <li><h4>Computador Dell i10</h4>
                         <img src="img/pc_1.jpg" height="200">
