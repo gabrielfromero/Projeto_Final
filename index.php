@@ -13,11 +13,10 @@
         <div align="center">
             <img src="img/logo1.gif" style="border-radius: 40px">
         </div>
-
         <div><marquee style="font-family: arial;" slide direction="left"><span style="color: fuchsia;">
                     <h1><b>A Melhor Empresa da Galaxia. Os Melhores Produtos com o Melhor Suporte do Mercado!
-                        </b></h1></span></marquee></div>
-
+                        </b></h1></span></marquee>
+        </div>
         <div class="container"
              <head>
             <div class="col-md-11" style="margin: 10px">
