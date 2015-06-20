@@ -1,4 +1,5 @@
-<!--<?php include ('comum.php');
+<!--<?php
+include ('comum.php');
 
 $con = novaConexao();
 
@@ -18,12 +19,17 @@ include_once ('comum.php');
         <script src="js/bootstrap.js" type="text/javascript"></script>        
     </head>
     <body>
-        <div align="center">
-            <img src="img/logo1.gif" style="border-radius: 40px">
-        </div>
-        <div><marquee style="font-family: fantasy;" slide direction="left"><span style="color: fuchsia;">
-                    <h1><b>A Melhor Empresa da Galaxia. Os Melhores Produtos com o Melhor Suporte do Mercado!
-                        </b></h1></span></marquee>
+        <div class="container">
+            <div class="row">
+                <div align="center">
+                    <img src="img/logo1.gif" style="border-radius: 40px">
+                </div>
+            </div>
+
+            <div><marquee style="font-family: fantasy" slide direction="left"><span style="color: fuchsia;">
+                        <h1><b>A Melhor Empresa da Galaxia. Os Melhores Produtos com o Melhor Suporte do Mercado!
+                            </b></h1></span></marquee>
+            </div>
         </div>
         <div class="container"
              <head>
@@ -44,7 +50,7 @@ include_once ('comum.php');
                 </ul>
             </div>
         </head>
-        <div align="center"  class="col-lg-5" style="margin: 10px">
+        <div align="center" class="col-lg-5" style="margin: 10px">
             <div>
                 <form class="form-inline">
                     <div class="form-group">
@@ -79,13 +85,6 @@ include_once ('comum.php');
                     <a  href="cadastro.php" style="color: #000"><button style="margin: 5px"type="button" class="btn btn-info" id="login">Criar Cadastro</button>                 
                 </div>
 
-                <!--                <?php if (isset($_GET['msg'])) { ?>
-                        
-                                            <span><?php echo $_GET['msg']; ?></span>
-                <?php } ?>
-                                <br>
-                                <br>
-                                <br>-->
             </div>
             <div class="row" style="background-color: #bce8f1" align="center">
                 <h2>Carrinho de Compras</h2>
@@ -126,26 +125,13 @@ include_once ('comum.php');
             </div>
         </div>
     </div>
-    <div class="row" style="color: red" align="center">
-        <h3>Site criado em Julho de 2015 por [Gabriel Faber Romero]
-            <br> 
-            Copyright © 2003-2015. O design deste site é uma cortesia do [Mestre Gabriel].</h3>
+    <div class="container">
+        <div class="row" align="center" style="color: red">
+            <h3>Site criado em Julho de 2015 por [Gabriel Faber Romero]
+                <br> 
+                Copyright © 2003-2015. O design deste site é uma cortesia do [Mestre Gabriel].</h3>
+        </div>
     </div>
-    <script>
-//                    $('#login').click(function () {
-//            var valido = true;
-//                    if ($('#user').val() == '') {
-//            valido = false; . +
-//                    alert('Preencha seu login');
-//            }
-//            if ($('#senha').val() == '') {
-//            valido = false;
-//                    alert('Preencha sua senha corretamente');
-//            }
-//            }
-//            return valido;
-//            });
-    </script>
 </body>
 </html>
 
