@@ -1,13 +1,3 @@
-<!--<?php
-include ('comum.php');
-
-$con = novaConexao();
-
-$sql = $con->prepare('select * from conta');
-$sql->execute();
-$sql->bind_result($id, $usuario, $senha);
-include_once ('comum.php');
-?>-->
 <html>
     <head>
         <title>Projeto Final</title>

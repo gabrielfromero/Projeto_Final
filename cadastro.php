@@ -9,7 +9,7 @@
         <script src="js/bootstrap.js" type="text/javascript"></script>        
     </head>
     <body>
-        <!--<div align="center" style="color: cyan; font-family: cursive"><h1><b>Digital Computer</b></h1></div>-->
+        
         <div class="container">
             <a href="index.php"><img src="img/logo1.gif" style="border-radius: 40px"></a>
 
@@ -112,9 +112,6 @@
                             <div class="form-group" style="margin: 10px">
                                 <div class="col-sm-offset-2 col-sm-3">
                                     <button class="btn btn-success" type="button" >Cadastrar</button>
-                                    <?php if (isset($_GET['msg'])) { ?>
-                                        <span><?php echo $_GET['msg']; ?></span>
-                                    <?php } ?>
                                 </div>
                             </div>
                         </form>
