@@ -1,13 +1,14 @@
-<!--<?php
+<?php
 include ('comum.php');
 
 $con = novaConexao();
 
 $sql = $con->prepare('select * from conta');
 $sql->execute();
-$sql->bind_result($id, $usuario, $senha);
+$sql->bind_result($id, $nome, $endereco, $telefone, $email, $cpf, $rg, $sexo);
 include_once ('comum.php');
-?>-->
+?>
+
 <html>
     <head>
         <title>Projeto Final</title>
@@ -35,7 +36,7 @@ include_once ('comum.php');
              <head>
             <div class="row" style="margin: 10px">
                 <ul>
-                    <li class="btn-primary col-md-4" align="center" style="text-decoration-color: #28a4c9" 
+                    <li class="btn-primary col-md-4" align="center" style="text-decoration-color: #28a4c9"> 
                         <span class="icon-bar">
                             <a href="http://www.americanas.com.br/linha/267889/informatica/computadores-e-all-in-one"style="color:#000"><h2>Computadores</h2></a></span>
                     </li>
@@ -82,7 +83,7 @@ include_once ('comum.php');
                 <div class="form-group">
                     <button style="margin: 5px"  type="button" class="btn btn-info" id="login">Entrar</button>
                     <br>
-                    <a  href="cadastro.php" style="color: #000"><button style="margin: 5px"type="button" class="btn btn-info" id="login">Criar Cadastro</button>                 
+                    <a  href="cadastro.php" style="color: #000"><button style="margin: 5px"type="button" class="btn btn-info">Criar Cadastro</button></a>                 
                 </div>
 
             </div>
@@ -132,6 +133,7 @@ include_once ('comum.php');
                 Copyright © 2003-2015. O design deste site é uma cortesia do [Mestre Gabriel].</h3>
         </div>
     </div>
+        
 </body>
 </html>
 
