@@ -38,15 +38,15 @@ include_once ('comum.php');
                 <ul>
                     <li class="btn-primary col-md-4" align="center" style="text-decoration-color: #28a4c9"> 
                         <span class="icon-bar">
-                            <a href="http://www.americanas.com.br/linha/267889/informatica/computadores-e-all-in-one"style="color:#000"><h2>Computadores</h2></a></span>
+                            <a style="text-decoration: none; color: #000" href="http://www.americanas.com.br/linha/267889/informatica/computadores-e-all-in-one"><h2>Computadores</h2></a></span>
                     </li>
                     <li class="btn-primary col-md-4" align="center">
                         <span class="icon-bar">
-                            <a href="https://www.balaodainformatica.com.br/Produtos/Inform%C3%A1tica/Componentes-e-Pe%C3%A7as"style="color: #000"><h2>Peças</h2></a></span>
+                            <a  style="text-decoration: none; color: #000" href="https://www.balaodainformatica.com.br/Produtos/Inform%C3%A1tica/Componentes-e-Pe%C3%A7as"><h2>Peças</h2></a></span>
                     </li>
                     <li class="btn-primary col-md-4" align="center">
                         <span class="icon-bar">
-                            <a href="http://www.smartsupport.com.br/" style="color: #000"><h2>Suporte</h2></a></span>
+                            <a style="text-decoration: none; color: #000" href="http://www.smartsupport.com.br/"><h2>Suporte</h2></a></span>
                     </li>
                 </ul>
             </div>
