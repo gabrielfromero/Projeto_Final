@@ -5,7 +5,7 @@ $con = novaConexao();
 
 $sql = $con->prepare('select * from conta');
 $sql->execute();
-$sql->bind_result($id, $nome, $endereco, $telefone, $email, $cpf, $rg, $sexo);
+$sql->bind_result($id, $nome, $endereco, $telefone, $email, $cpf, $rg, $sexo, $senha);
 include_once ('comum.php');
 ?>
 
@@ -133,11 +133,11 @@ include_once ('comum.php');
                 Copyright © 2003-2015. O design deste site é uma cortesia do [Mestre Gabriel].</h3>
         </div>
     </div>
-        <script>
-            $('.btn-danger').click(function (){
-                alert("Deseja comprar este produto?");
-            })
-            </script>
+    <script>
+        $('.btn-danger').click(function () {
+            alert("Deseja comprar este produto?");
+        })
+    </script>
 </body>
 </html>
 

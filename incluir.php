@@ -4,25 +4,26 @@ include_once ('comum.php');
 
 $con = novaConexao();
 
-if (count($_GET) > 0) {
+if (count($_POST) > 0) {
 
     echo '<pre>';
-    var_dump($_GET);
+    var_dump($_POST);
     echo '</pre>';
 
     echo 'teste';
 
 
 
-    if (isset($_GET['ativo'])) {
+    if (isset($_POST['ativo'])) {
         $ativo = 1;
     } else {
         $ativo = 0;
     }
+    
+//    $senha = sha1($_POST['senha1']);
 
-    $sql = $con->prepare('INSERT INTO conta (nome, endereco, telefone, email, cpf, rg, sexo) VALUES (?,?,?,?,?,?,?)');
-    $sql->bind_param('ssssssi', $_GET['nome'], $_GET['endereco'], $_GET['telefone'], $_GET['email'], $_GET['cpf'], $_GET['rg'], $_GET['sexo']);
-
+    $sql = $con->prepare('INSERT INTO conta (nome, endereco, telefone, email, cpf, rg, sexo, senha2) VALUES (?,?,?,?,?,?,?,?)');
+    $sql->bind_param('ssssssis', $_POST['nome'], $_POST['endereco'], $_POST['telefone'], $_POST['email'], $_POST['cpf'], $_POST['rg'], $_POST['sexo'], $_POST['senha2']);
 
     if ($sql->execute()) {
         $msg = 'Deu certo';
@@ -34,5 +35,5 @@ if (count($_GET) > 0) {
         echo '</pre>';
         exit;
     }
-    header('location:index.php?msg='. $msg);
+    header('location:index.php?msg=' . $msg);
 }

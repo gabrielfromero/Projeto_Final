@@ -49,7 +49,7 @@
                 <head>
                 <div class="container">
                     <div class="col-md-12">
-                        <form class="form-horizontal" method="GET" action="incluir.php">
+                        <form class="form-horizontal" method="POST" action="incluir.php">
                             <div class="form-group" style="margin-top: 30px">
                                 <label class="col-sm-2 control-label " >Nome</label>
                                 <div class="col-sm-5">
@@ -58,31 +58,31 @@
                             </div>
                             <div class="form-group">
                                 <label class="col-sm-2 control-label" >Endereço</label>
-                                <div class="col-sm-8">
+                                <div class="col-sm-7">
                                     <input type="text" name="endereco"class="form-control" id="end" placeholder="Endereço">
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="col-sm-2 control-label" >Telefone</label>
-                                <div class="col-sm-4">
+                                <div class="col-sm-3">
                                     <input type="text" name="telefone"class="form-control" id="tel" placeholder="Telefone">
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="col-sm-2 control-label" >E-mail</label>
-                                <div class="col-sm-8">
+                                <div class="col-sm-6">
                                     <input type="text" name="email"class="form-control" id="email" placeholder="E-mail">
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="col-sm-2 control-label" >CPF</label>
-                                <div class="col-sm-4">
+                                <div class="col-sm-2">
                                     <input type="text" name="cpf"class="form-control" id="cpf" placeholder="000.000.000-00">
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="col-sm-2 control-label">RG</label>
-                                <div class="col-sm-3">
+                                <div class="col-sm-2">
                                     <input type="text" name="rg" id="input-endereco" class="form-control" id="rg" placeholder="0000000000">
                                 </div>
                             </div>
@@ -100,20 +100,20 @@
                             <div class="form-group">
                                 <label class="col-sm-3 control-label">Digite uma Senha</label>
                                 <div class="col-sm-2">
-                                    <input type="password" name="senha"class="form-control" placeholder="****">
+                                    <input type="password" name="senha1" id="senha1" class="form-control" placeholder="****">
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="col-sm-3 control-label">Confirme a sua senha</label>
                                 <div class="col-sm-2">
-                                    <input type="password" name="senha" class="form-control" placeholder="****">
+                                    <input type="password" name="senha2" id="senha2" class="form-control" placeholder="****">
                                 </div>
                             </div>
                             <div class="form-group" style="margin: 10px">
                                 <div class="col-sm-offset-2 col-sm-3">
-                                    <a id="cadastro" ><button class="btn btn-success" type="button" >Cadastrar</button></a>
+                                    <a id="cadastro" ><button class="btn btn-success" type="submit" >Cadastrar</button></a>
                                     <?php if (isset($_GET['msg'])) { ?>
-                                        <span>//<?php echo $_GET['msg']; ?></span>
+                                        <span><?php echo $_GET['msg']; ?></span>
                                     <?php } ?>
                                 </div>
                             </div>
@@ -165,7 +165,14 @@
             valido = false;
             alert('Escolha um sexo');
         }
+        if ($('#senha1').val() == ('#senha2') {
+            valido = false;
+            alert('As senhas não correspondem!')           
+        }
         return valido;
+        alert(Sucesso!)
     });
+
+
 </script>
 </html>
