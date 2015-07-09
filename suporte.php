@@ -77,7 +77,7 @@
             </div>
         </div>
         <div class="container">
-            <div class="row" align="center" style="color: red; margin-top: 300px">
+            <div class="row" align="center" style="color: red; margin-top: 350px">
                 <h3>Site criado em Julho de 2015 por [Gabriel Faber Romero]
                     <br> 
                     Copyright © 2003-2015. O design deste site é uma cortesia do [Mestre Gabriel].</h3>
