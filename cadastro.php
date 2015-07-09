@@ -24,7 +24,7 @@
                 <ul>
                     <li class="btn-primary col-md-4" align="center"> 
                         <span class="icon-bar">
-                            <a style="text-decoration: #000; color: #000" href="computadores.php"><h2>Computadores</h2></a></span>
+                            <a style="text-decoration: none; color: #000" href="computadores.php"><h2>Computadores</h2></a></span>
                     </li>
                     <li class="btn-primary col-md-4" align="center">
                         <span class="icon-bar">
@@ -37,7 +37,7 @@
                 </ul>
             </div>
         </head>
-    </div>>
+    </div>
 
     <div class="container" style="background-color: #269abc">
         <div class="col-lg-12" style="margin: 10px">
