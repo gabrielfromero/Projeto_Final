@@ -8,7 +8,6 @@ $sql->execute();
 $sql->bind_result($id, $nome, $endereco, $telefone, $email, $cpf, $rg, $sexo, $senha);
 include_once ('comum.php');
 ?>
-
 <html>
     <head>
         <title>Projeto Final</title>
@@ -36,27 +35,27 @@ include_once ('comum.php');
              <head>
             <div class="row" style="margin: 10px">
                 <ul>
-                    <li class="btn-primary col-md-4" align="center" style="text-decoration-color: #28a4c9"> 
+                    <li class="btn-primary col-md-4" align="center"> 
                         <span class="icon-bar">
-                            <a style="text-decoration: none; color: #000" href="http://www.americanas.com.br/linha/267889/informatica/computadores-e-all-in-one"><h2>Computadores</h2></a></span>
+                            <a style="text-decoration: #000; color: #000" href="computadores.php"><h2>Computadores</h2></a></span>
                     </li>
                     <li class="btn-primary col-md-4" align="center">
                         <span class="icon-bar">
-                            <a  style="text-decoration: none; color: #000" href="https://www.balaodainformatica.com.br/Produtos/Inform%C3%A1tica/Componentes-e-Pe%C3%A7as"><h2>Peças</h2></a></span>
+                            <a  style="text-decoration: none; color: #000" href="pecas.php"><h2>Peças</h2></a></span>
                     </li>
                     <li class="btn-primary col-md-4" align="center">
                         <span class="icon-bar">
-                            <a style="text-decoration: none; color: #000" href="http://www.smartsupport.com.br/"><h2>Suporte</h2></a></span>
+                            <a style="text-decoration: none; color: #000" href="suporte.php"><h2>Suporte</h2></a></span>
                     </li>
                 </ul>
             </div>
         </head>
         <div align="center" class="col-lg-5" style="margin: 10px">
             <div>
-                <form class="form-inline">
+                <form class="form-inline" method="GET" action="busca.php">
                     <div class="form-group">
                         <label for="exampleInputName2" style="color: white">Campo de Busca</label>
-                        <input type="text" style="margin: 7px" class="form-control" placeholder="Digite sua busca">
+                        <input type="text" style="margin: 7px" class="form-control" id="consulta" name="consulta" placeholder="Digite sua busca">
 
                     </div>
                     <button type="submit" class="btn btn-success">Buscar</button>
@@ -104,7 +103,7 @@ include_once ('comum.php');
             </div>
         </div>
         <div class="col-md-6"  style="margin: 10px">
-            <div class="row" style="background-color: darkcyan">
+            <div class="row" style="background-color: white">
                 <ul><h3 style="font-family: inherit; color: blue"><b>Lançamentos</b></h3></ul>
                 <ul>
                     <li><h4>Computador Dell i10</h4>

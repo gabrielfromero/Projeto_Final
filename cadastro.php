@@ -22,116 +22,116 @@
              <head>
             <div class="row" style="margin: 10px">
                 <ul>
-                    <li class="btn-primary col-md-4" align="center" style="text-decoration-color: #28a4c9" 
+                    <li class="btn-primary col-md-4" align="center"> 
                         <span class="icon-bar">
-                            <a href="http://www.americanas.com.br/linha/267889/informatica/computadores-e-all-in-one"style="color:#000"><h2>Computadores</h2></a></span>
+                            <a style="text-decoration: #000; color: #000" href="computadores.php"><h2>Computadores</h2></a></span>
                     </li>
                     <li class="btn-primary col-md-4" align="center">
                         <span class="icon-bar">
-                            <a href="https://www.balaodainformatica.com.br/Produtos/Inform%C3%A1tica/Componentes-e-Pe%C3%A7as"style="color: #000"><h2>Peças</h2></a></span>
+                            <a  style="text-decoration: none; color: #000" href="pecas.php"><h2>Peças</h2></a></span>
                     </li>
                     <li class="btn-primary col-md-4" align="center">
                         <span class="icon-bar">
-                            <a href="http://www.smartsupport.com.br/" style="color: #000"><h2>Suporte</h2></a></span>
+                            <a style="text-decoration: none; color: #000" href="suporte.php"><h2>Suporte</h2></a></span>
                     </li>
                 </ul>
             </div>
         </head>
+    </div>>
 
-        <div class="container" style="background-color: #269abc">
-            <div class="col-lg-12" style="margin: 10px">
-                <div>
-                    <div class= col-md-6>
-                        <img class="form-inline">
-                    </div>
-                    <div class= col-md-4></div>
+    <div class="container" style="background-color: #269abc">
+        <div class="col-lg-12" style="margin: 10px">
+            <div>
+                <div class= col-md-6>
+                    <img class="form-inline">
                 </div>
-                <head>
-                <div class="container">
-                    <div class="col-md-12">
-                        <form class="form-horizontal" method="POST" action="incluir.php">
-                            <div class="form-group" style="margin-top: 30px">
-                                <label class="col-sm-2 control-label " >Nome</label>
-                                <div class="col-sm-5">
-                                    <input type="text" name="nome"class="form-control" id="nome" placeholder="Nome">
-                                </div>
+                <div class= col-md-4></div>
+            </div>
+            <div class="container">
+                <div class="col-md-12">
+                    <form class="form-horizontal" method="POST" action="incluir.php">
+                        <div class="form-group" style="margin-top: 30px">
+                            <label class="col-sm-2 control-label " >Nome</label>
+                            <div class="col-sm-5">
+                                <input type="text" name="nome"class="form-control" id="nome" placeholder="Nome">
                             </div>
-                            <div class="form-group">
-                                <label class="col-sm-2 control-label" >Endereço</label>
-                                <div class="col-sm-7">
-                                    <input type="text" name="endereco"class="form-control" id="end" placeholder="Endereço">
-                                </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label" >Endereço</label>
+                            <div class="col-sm-7">
+                                <input type="text" name="endereco"class="form-control" id="end" placeholder="Endereço">
                             </div>
-                            <div class="form-group">
-                                <label class="col-sm-2 control-label" >Telefone</label>
-                                <div class="col-sm-3">
-                                    <input type="text" name="telefone"class="form-control" id="tel" placeholder="Telefone">
-                                </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label" >Telefone</label>
+                            <div class="col-sm-3">
+                                <input type="text" name="telefone"class="form-control" id="tel" placeholder="Telefone">
                             </div>
-                            <div class="form-group">
-                                <label class="col-sm-2 control-label" >E-mail</label>
-                                <div class="col-sm-6">
-                                    <input type="text" name="email"class="form-control" id="email" placeholder="E-mail">
-                                </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label" >E-mail</label>
+                            <div class="col-sm-6">
+                                <input type="text" name="email"class="form-control" id="email" placeholder="E-mail">
                             </div>
-                            <div class="form-group">
-                                <label class="col-sm-2 control-label" >CPF</label>
-                                <div class="col-sm-2">
-                                    <input type="text" name="cpf"class="form-control" id="cpf" placeholder="000.000.000-00">
-                                </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label" >CPF</label>
+                            <div class="col-sm-2">
+                                <input type="text" name="cpf"class="form-control" id="cpf" placeholder="000.000.000-00">
                             </div>
-                            <div class="form-group">
-                                <label class="col-sm-2 control-label">RG</label>
-                                <div class="col-sm-2">
-                                    <input type="text" name="rg" id="input-endereco" class="form-control" id="rg" placeholder="0000000000">
-                                </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">RG</label>
+                            <div class="col-sm-2">
+                                <input type="text" name="rg" id="input-endereco" class="form-control" id="rg" placeholder="0000000000">
                             </div>
-                            <div class="form-group">
-                                <label class="col-sm-2 control-label" id="sexo">Sexo</label>
-                                <div class="col-sm-3">
-                                    <label class="radio-inline">
-                                        <input name="sexo" type="radio" value="m" id="fem"> Masculino
-                                    </label>
-                                    <label class="radio-inline">
-                                        <input name="sexo" type="radio" value="f" id="masc"> Feminino
-                                    </label>
-                                </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label" id="sexo">Sexo</label>
+                            <div class="col-sm-3">
+                                <label class="radio-inline">
+                                    <input name="sexo" type="radio" value="m" id="fem"> Masculino
+                                </label>
+                                <label class="radio-inline">
+                                    <input name="sexo" type="radio" value="f" id="masc"> Feminino
+                                </label>
                             </div>
-                            <div class="form-group">
-                                <label class="col-sm-3 control-label">Digite uma Senha</label>
-                                <div class="col-sm-2">
-                                    <input type="password" name="senha1" id="senha1" class="form-control" placeholder="****">
-                                </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">Digite uma Senha</label>
+                            <div class="col-sm-2">
+                                <input type="password" name="senha1" id="senha1" class="form-control" placeholder="****">
                             </div>
-                            <div class="form-group">
-                                <label class="col-sm-3 control-label">Confirme a sua senha</label>
-                                <div class="col-sm-2">
-                                    <input type="password" name="senha2" id="senha2" class="form-control" placeholder="****">
-                                </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">Confirme a sua senha</label>
+                            <div class="col-sm-2">
+                                <input type="password" name="senha2" id="senha2" class="form-control" placeholder="****">
                             </div>
-                            <div class="form-group" style="margin: 10px">
-                                <div class="col-sm-offset-2 col-sm-3">
-                                    <a id="cadastro" ><button class="btn btn-success" type="submit" >Cadastrar</button></a>
-                                    <?php if (isset($_GET['msg'])) { ?>
-                                        <span><?php echo $_GET['msg']; ?></span>
-                                    <?php } ?>
-                                </div>
+                        </div>
+                        <div class="form-group" style="margin: 10px">
+                            <div class="col-sm-offset-2 col-sm-3">
+                                <a id="cadastro" ><button class="btn btn-success" type="submit" >Cadastrar</button></a>
+                                <?php if (isset($_GET['msg'])) { ?>
+                                    <span><?php echo $_GET['msg']; ?></span>
+                                <?php } ?>
                             </div>
-                        </form>
-                    </div>
-
+                        </div>
+                    </form>
                 </div>
 
             </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row" align="center" style="color: red">
-            <h3>Site criado em Julho de 2015 por [Gabriel Faber Romero]
 
-                Copyright © 2003-2015.<br>O design deste site é uma cortesia do [Mestre Gabriel].</h3>
         </div>
     </div>
+</div>
+<div class="container">
+    <div class="row" align="center" style="color: red">
+        <h3>Site criado em Julho de 2015 por [Gabriel Faber Romero]
+
+            Copyright © 2003-2015.<br>O design deste site é uma cortesia do [Mestre Gabriel].</h3>
+    </div>
+</div>
 
 </body>
 <script>
@@ -165,12 +165,12 @@
             valido = false;
             alert('Escolha um sexo');
         }
-        if ($('#senha1').val() == ('#senha2') {
+        if ($('#senha1').val() !== '#senha2') {
             valido = false;
-            alert('As senhas não correspondem!')           
+            alert('As senhas não correspondem!');
         }
         return valido;
-        alert(Sucesso!)
+
     });
 
 
