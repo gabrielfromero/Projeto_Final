@@ -24,7 +24,7 @@
                 <ul>
                     <li class="btn-primary col-md-4" align="center"> 
                         <span class="icon-bar">
-                            <a style="text-decoration: #000; color: #000" href="computadores.php"><h2>Computadores</h2></a></span>
+                            <a style="text-decoration: none; color: #000" href="computadores.php"><h2>Computadores</h2></a></span>
                     </li>
                     <li class="btn-primary col-md-4" align="center">
                         <span class="icon-bar">
@@ -60,9 +60,9 @@
                 </div>
                 <div>
                     <div class="top-offset-10">
-                        <div class="col-sm-4 hidden-xs hidden-md">
+                        <div class="col-sm-4">
                             <div class="hidden-xs">
-                                <img src="http://i.dell.com/das/xa.ashx/global-site-design%20WEB/8478470c-a7df-0e2e-b545-028bcb1a3005/1/OriginalPng?id=Dell/Product_Images/eSupport/icons/esupport-home-customized-icon.jpg">
+                                <img width="150" src="http://i.dell.com/das/xa.ashx/global-site-design%20WEB/8478470c-a7df-0e2e-b545-028bcb1a3005/1/OriginalPng?id=Dell/Product_Images/eSupport/icons/esupport-home-customized-icon.jpg">
                             </div>
                         </div>
                         <div class="col-md-8">

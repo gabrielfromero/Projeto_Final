@@ -24,7 +24,7 @@
                 <ul>
                     <li class="btn-primary col-md-4" align="center"> 
                         <span class="icon-bar">
-                            <a style="text-decoration: #000; color: #000" href="computadores.php"><h2>Computadores</h2></a></span>
+                            <a style="text-decoration: none; color: #000" href="computadores.php"><h2>Computadores</h2></a></span>
                     </li>
                     <li class="btn-primary col-md-4" align="center">
                         <span class="icon-bar">
@@ -40,22 +40,31 @@
         <div class="container">
             <div class="col-md-12"  style="margin: 10px">
                 <div class="row" style="background-color: white">
-                    <ul><h3 style="font-family: inherit; color: blue"><b>Lançamentos</b></h3></ul>
+                    <ul><h1 style="font-family: inherit; color: blue"><b>Computadores</b></h1></ul>
                     <ul>
-                        <li><h3>Computador Dell i10</h3>
+                        <li style="margin: 50px"><h3>Computador Dell i10</h3>
                             <img src="img/pc_1.jpg" height="200">
                             <button type="button" id="compra1" class="btn btn-danger">Comprar</button> 
-                            <h4>Este Computador é uma super máquina da revolução moderna, com 50Gb de Memória Ram e seu processador de 10 núcleos de processameto.</h4>
+                            <div class="col-lg-3">
+                            <h4>Este Computador é uma super máquina da revolução moderna, com 50Gb de Memória Ram e seu processador de 10 núcleos de processameto.
+                                <br><br> <a style="text-decoration: none">R$ 3.500,00</a> </h4>
+                            </div>
                         </li>
-                        <li><h3>Computador Lenovo i5</h3>
+                        <li style="margin: 50px"><h3>Computador Lenovo i5</h3>
                             <img src="img/pc_2.jpg" height="250">
                             <button type="button" id="compra2" class="btn btn-danger">Comprar</button>
-                            <h4>Esta máquina de uso pessoal é perfeita para o seu dia-a-dia com seu design futuristico e seu poder de armazento altíssimo.</h4>
+                            <div class="col-lg-3">
+                            <h4>Esta máquina de uso pessoal é perfeita para o seu dia-a-dia com seu design futuristico e seu poder de armazento altíssimo.
+                            <br><br> <a style="text-decoration: none">R$ 2.500,00</a></h4>
+                            </div>
                         </li>
-                        <li><h3>Computador Apple</h3>
+                        <li style="margin: 50px"><h3>Computador Apple</h3>
                             <img src="img/pc_3.jpg" height="300">
                             <button type="button" id="compra3" class="btn btn-danger">Comprar</button>
-                            <h4>Este é o mais novo lançamento da Apple, com seu super processador você poderá jogar os melhores jogos.</h4>    
+                            <div class="col-lg-3">
+                            <h4>Este é o mais novo lançamento da Apple, com seu super processador você poderá jogar os melhores jogos.
+                            <br><br> <a style="text-decoration: none">R$ 6.500,00</a></h4>
+                            </div>
                         </li>
                     </ul>
                 </div>

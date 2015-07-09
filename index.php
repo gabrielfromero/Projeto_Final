@@ -25,9 +25,8 @@ include_once ('comum.php');
                     <img src="img/logo1.gif" style="border-radius: 40px">
                 </div>
             </div>
-
             <div><marquee style="font-family: fantasy" slide direction="left"><span style="color: fuchsia;">
-                        <h1><b>A Melhor Empresa da Galaxia. Os Melhores Produtos com o Melhor Suporte do Mercado!
+                        <h1><b>A Melhor Empresa do Estado. Os Melhores Produtos com o Melhor Suporte do Mercado!
                             </b></h1></span></marquee>
             </div>
         </div>
@@ -37,7 +36,7 @@ include_once ('comum.php');
                 <ul>
                     <li class="btn-primary col-md-4" align="center"> 
                         <span class="icon-bar">
-                            <a style="text-decoration: #000; color: #000" href="computadores.php"><h2>Computadores</h2></a></span>
+                            <a style="text-decoration: none; color: #000" href="computadores.php"><h2>Computadores</h2></a></span>
                     </li>
                     <li class="btn-primary col-md-4" align="center">
                         <span class="icon-bar">
