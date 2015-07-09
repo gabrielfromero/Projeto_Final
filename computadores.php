@@ -61,3 +61,10 @@
                 </div>
             </div>
         </div>
+        <div class="container">
+            <div class="row" align="center" style="color: red">
+                <h3>Site criado em Julho de 2015 por [Gabriel Faber Romero]
+                    <br> 
+                    Copyright © 2003-2015. O design deste site é uma cortesia do [Mestre Gabriel].</h3>
+            </div>
+        </div>

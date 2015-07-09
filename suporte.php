@@ -65,17 +65,24 @@
                                 <img src="http://i.dell.com/das/xa.ashx/global-site-design%20WEB/8478470c-a7df-0e2e-b545-028bcb1a3005/1/OriginalPng?id=Dell/Product_Images/eSupport/icons/esupport-home-customized-icon.jpg">
                             </div>
                         </div>
-                        <div class="col-sm-8 col-md-12 col-lg-8">
+                        <div class="col-md-8">
                             <div>
-                                <div style="color: #fff"><h3>Ambas as identificações de produto estão localizados na parte traseira ou inferior do dispositivo.</h3>
+                                <div style="color: #fff"><h3>Ambas as identificações de produto estão localizados na parte traseira ou inferior do produto.</h3>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+        <div class="container">
+            <div class="row" align="center" style="color: red; margin-top: 300px">
+                <h3>Site criado em Julho de 2015 por [Gabriel Faber Romero]
+                    <br> 
+                    Copyright © 2003-2015. O design deste site é uma cortesia do [Mestre Gabriel].</h3>
+            </div>
+        </div>
 
 
 
