@@ -9,7 +9,6 @@
         <script src="js/bootstrap.js" type="text/javascript"></script>        
     </head>
     <body>
-        <!--<div align="center" style="color: cyan; font-family: cursive"><h1><b>Digital Computer</b></h1></div>-->
         <div class="container">
             <a href="index.php"><img src="img/logo1.gif" style="border-radius: 40px"></a>
 
@@ -18,8 +17,7 @@
                             </b></h1></span></marquee>
             </div>
         </div>
-        <div class="container"
-             <head>
+        <div class="container">
             <div class="row" style="margin: 10px">
                 <ul>
                     <li class="btn-primary col-md-4" align="center"> 
@@ -36,8 +34,7 @@
                     </li>
                 </ul>
             </div>
-        </head>
-    </div>>
+    </div>
     <div class="container">
         <div class="col-md-12"  style="margin: 10px">
             <div class="row" style="background-color: white">
@@ -47,24 +44,24 @@
                         <img src="img/peca1.jpg" height="200">
                         <button type="button" id="compra1" class="btn btn-danger">Comprar</button>
                         <div class="col-lg-3">
-                        <h4>Este gabinete é uma super máquina da revolução moderna.
-                        <br><br> <a style="text-decoration: none">R$ 500,00</a></h4>
+                            <h4>Este gabinete é uma super máquina da revolução moderna.
+                                <br><br> <a style="text-decoration: none">R$ 500,00</a></h4>
                         </div>
                     </li>
                     <li style="margin: 50px"><h3>Estabilizador SMS</h3>
                         <img src="img/peca2.jpg" height="250">
                         <button type="button" id="compra2" class="btn btn-danger">Comprar</button>
                         <div class="col-lg-3">
-                        <h4>Este estabilizador é perfeito para o seu computador com seu design moderno e sofisticado.
-                        <br><br> <a style="text-decoration: none">R$ 800,00</a></h4>
+                            <h4>Este estabilizador é perfeito para o seu computador com seu design moderno e sofisticado.
+                                <br><br> <a style="text-decoration: none">R$ 800,00</a></h4>
                         </div>
                     </li>
                     <li style="margin: 50px"><h3>Placa de Video Geforce</h3>
                         <img src="img/peca3.jpg" height="230">
                         <button type="button" id="compra3" class="btn btn-danger">Comprar</button>
                         <div class="col-lg-3">
-                        <h4>Este é o mais novo lançamento da Geforce, com seu super processamento de video você poderá jogar os melhores jogos com a mais alta qualidade.
-                        <br><br> <a style="text-decoration: none">R$ 1.500,00</a></h4>  
+                            <h4>Este é o mais novo lançamento da Geforce, com seu super processamento de video você poderá jogar os melhores jogos com a mais alta qualidade.
+                                <br><br> <a style="text-decoration: none">R$ 1.500,00</a></h4>  
                         </div>
                     </li>
                 </ul>
@@ -78,3 +75,5 @@
                 Copyright © 2003-2015. O design deste site é uma cortesia do [Mestre Gabriel].</h3>
         </div>
     </div>
+</body>
+</html>

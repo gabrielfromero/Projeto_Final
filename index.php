@@ -1,4 +1,5 @@
 <?php
+session_start();
 include ('comum.php');
 
 $con = novaConexao();
@@ -30,8 +31,7 @@ include_once ('comum.php');
                             </b></h1></span></marquee>
             </div>
         </div>
-        <div class="container"
-             <head>
+        <div class="container">
             <div class="row" style="margin: 10px">
                 <ul>
                     <li class="btn-primary col-md-4" align="center"> 
@@ -48,7 +48,6 @@ include_once ('comum.php');
                     </li>
                 </ul>
             </div>
-        </head>
         <div align="center" class="col-lg-5" style="margin: 10px">
             <div>
                 <form class="form-inline" method="GET" action="busca.php">
@@ -61,29 +60,35 @@ include_once ('comum.php');
                 </form>
             </div>
             <div class="jumbotron">
-                <div class="form-group">
-                    <label class="col-sm-5 control-label" id="user">Usuário</label>
-                    <div class="col-sm-7">
-                        <input type="text" name="login" class="form-control" placeholder="Login">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label class="col-sm-5 control-label" id="senha">Senha</label>
-                    <div class="col-sm-7">
-                        <input type="password" name="senha"class="form-control" placeholder="Senha">
-                    </div>
-                </div> 
-                <br>
-                <br>
-                <br>
-                <br>
+                <?php if (!empty($_SESSION['conta']['id'])) { ?>
+                    <h4> Bem vindo, <?php echo $_SESSION['conta']['nome'] ?>!</h4>
+                    <a href="logoff.php">Sair</a>
+                <?php } else { ?>
+                    <form class="form-inline" style="margin-top:08px" action="login.php" method="POST">
+                        <div class="form-group">
+                            <label class="col-sm-5 control-label" id="user">E-mail</label>
+                            <div class="col-sm-7">
+                                <input type="email" name="email" class="form-control" placeholder="Login">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-5 control-label" id="senha">Senha</label>
+                            <div class="col-sm-7">
+                                <input type="password" name="senha" class="form-control" placeholder="Senha">
+                            </div>
+                        </div> 
+                        <br>
+                        <br>
+                        <br>
+                        <br>
 
-                <div class="form-group">
-                    <button style="margin: 5px"  type="button" class="btn btn-info" id="login">Entrar</button>
-                    <br>
-                    <a  href="cadastro.php" style="color: #000"><button style="margin: 5px"type="button" class="btn btn-info">Criar Cadastro</button></a>                 
-                </div>
-
+                        <div class="form-group">
+                            <button style="margin: 5px"  type="submit" class="btn btn-info" id="login">Entrar</button>
+                            <br>
+                            <a  href="cadastro.php" style="color: #000"><button style="margin: 5px"type="button" class="btn btn-info">Criar Cadastro</button></a>                 
+                        </div>
+                    </form>
+                <?php } ?>
             </div>
             <div class="row" style="background-color: #bce8f1" align="center">
                 <h2>Carrinho de Compras</h2>

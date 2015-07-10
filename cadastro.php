@@ -9,7 +9,6 @@
         <script src="js/bootstrap.js" type="text/javascript"></script>        
     </head>
     <body>
-        <!--<div align="center" style="color: cyan; font-family: cursive"><h1><b>Digital Computer</b></h1></div>-->
         <div class="container">
             <a href="index.php"><img src="img/logo1.gif" style="border-radius: 40px"></a>
 
@@ -124,55 +123,54 @@
 
         </div>
     </div>
-</div>
-<div class="container">
-    <div class="row" align="center" style="color: red">
-        <h3>Site criado em Julho de 2015 por [Gabriel Faber Romero]
+    <div class="container">
+        <div class="row" align="center" style="color: red">
+            <h3>Site criado em Julho de 2015 por [Gabriel Faber Romero]
 
-            Copyright © 2003-2015.<br>O design deste site é uma cortesia do [Mestre Gabriel].</h3>
+                Copyright © 2003-2015.<br>O design deste site é uma cortesia do [Mestre Gabriel].</h3>
+        </div>
     </div>
-</div>
 
+    <script>
+        $('#cadastro').click(function () {
+            var valido = true;
+            if ($('#nome').val() == '') {
+                valido = false;
+                alert('Preencha o nome');
+            }
+            if ($('#end').val() == '') {
+                valido = false;
+                alert('Preencha o endereço');
+            }
+            if ($('#tel').val() == '') {
+                valido = false;
+                alert('Preencha o endereço');
+            }
+            if ($('#email').val() == '') {
+                valido = false;
+                alert('Preencha o e-mail');
+            }
+            if ($('#cpf').val() == '') {
+                valido = false;
+                alert('Preencha o CPF');
+            }
+            if ($('#rg').val() == '') {
+                valido = false;
+                alert('Preencha o seu RG');
+            }
+            if (!$('#masc').is(':checked') && !$('#fem').is(':checked')) {
+                valido = false;
+                alert('Escolha um sexo');
+            }
+            if ($('#senha1').val() != $('#senha2').val()) {
+                valido = false;
+                alert('As senhas não correspondem!');
+            }
+            return valido;
+
+        });
+
+
+    </script>
 </body>
-<script>
-    $('#cadastro').click(function () {
-        var valido = true;
-        if ($('#nome').val() == '') {
-            valido = false;
-            alert('Preencha o nome');
-        }
-        if ($('#end').val() == '') {
-            valido = false;
-            alert('Preencha o endereço');
-        }
-        if ($('#tel').val() == '') {
-            valido = false;
-            alert('Preencha o endereço');
-        }
-        if ($('#email').val() == '') {
-            valido = false;
-            alert('Preencha o e-mail');
-        }
-        if ($('#cpf').val() == '') {
-            valido = false;
-            alert('Preencha o CPF');
-        }
-        if ($('#rg').val() == '') {
-            valido = false;
-            alert('Preencha o seu RG');
-        }
-        if (!$('#masc').is(':checked') && !$('#fem').is(':checked')) {
-            valido = false;
-            alert('Escolha um sexo');
-        }
-        if ($('#senha1').val() != $('#senha2').val()) {
-            valido = false;
-            alert('As senhas não correspondem!');
-        }
-        return valido;
-
-    });
-
-
-</script>
 </html>

@@ -9,7 +9,6 @@
         <script src="js/bootstrap.js" type="text/javascript"></script>        
     </head>
     <body>
-        <!--<div align="center" style="color: cyan; font-family: cursive"><h1><b>Digital Computer</b></h1></div>-->
         <div class="container">
             <a href="index.php"><img src="img/logo1.gif" style="border-radius: 40px"></a>
 
@@ -18,8 +17,7 @@
                             </b></h1></span></marquee>
             </div>
         </div>
-        <div class="container"
-             <head>
+        <div class="container">
             <div class="row" style="margin: 10px">
                 <ul>
                     <li class="btn-primary col-md-4" align="center"> 
@@ -36,8 +34,7 @@
                     </li>
                 </ul>
             </div>
-        </head>
-    </div>>
+    </div>
     <div class="container">
         <div>
             <div class="form-compressed">
@@ -67,7 +64,7 @@
                         </div>
                         <div class="col-md-8">
                             <div>
-                                <div style="color: #fff"><h3>Ambas as identificações de produto estão localizados na parte traseira ou inferior do produto.</h3>
+                                <div style="color: #fff"> <h3>Ambas as identificações de produto estão localizados na parte traseira ou inferior do produto.</h3>
                                 </div>
                             </div>
                         </div>
@@ -83,6 +80,9 @@
                     Copyright © 2003-2015. O design deste site é uma cortesia do [Mestre Gabriel].</h3>
             </div>
         </div>
+    </div>
+</body>
+</html>
 
 
 
