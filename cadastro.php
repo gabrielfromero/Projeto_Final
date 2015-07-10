@@ -165,7 +165,7 @@
             valido = false;
             alert('Escolha um sexo');
         }
-        if ($('#senha1').val() !== '#senha2') {
+        if ($('#senha1').val() != $('#senha2').val()) {
             valido = false;
             alert('As senhas não correspondem!');
         }
