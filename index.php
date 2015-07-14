@@ -64,6 +64,7 @@ include_once ('comum.php');
                     <h4> Bem vindo, <?php echo $_SESSION['conta']['nome'] ?>!</h4>
                     <a href="logoff.php">Sair</a>
                 <?php } else { ?>
+                  
                     <form class="form-inline" style="margin-top:08px" action="login.php" method="POST">
                         <div class="form-group">
                             <label class="col-sm-5 control-label" id="user">E-mail</label>

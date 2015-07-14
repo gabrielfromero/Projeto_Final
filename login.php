@@ -8,11 +8,13 @@ $con = novaConexao();
 $sql = $con->prepare('SELECT id, nome, email, senha2 FROM conta WHERE email LIKE ?');
 
 $email = $_POST['email'];
-$senha = sha1($_POST['senha']);
+$senha = ($_POST['senha']);
 
 $sql->bind_param('s', $email);
 $sql->execute();
 $conta = $sql->get_result()->fetch_all(MYSQLI_ASSOC);
+
+var_dump($conta);
 
 if (count($conta)) {
     if ($conta[0]['senha2'] == $senha) {
